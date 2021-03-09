@@ -1,0 +1,232 @@
+/* =============================================================
+  About Page
+  ============================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "montserrat", Arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background-color: #0e386e;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*this will put them in two colums*/
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*because we want this to be right align for mobile*/
+  padding: 2em;
+  /*for adding white space around it; on the inside of the element*/
+}
+
+header .logo {
+  color: #df0dd1;
+  font-weight: bold;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-header,
+.hero-design {
+  display: none;
+}
+
+.about {
+  background: #fcf2f5;
+  color: #083c80;
+  height: 40vh;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 4em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-me {
+  background: #e75fde;
+  height: 40vh;
+  margin-top: 0;
+}
+
+.contact-content {
+  text-align: center;
+  padding: 1em;
+}
+
+.contact-subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #083c80;
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
+}
+
+.contact-title {
+  color: #4fe6e1;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -0.4em;
+  display: block;
+}
+
+.contact-desc {
+  color: white;
+  margin-bottom: 3em;
+  font-size: 1em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.contact-design {
+  display: none;
+}
+
+.contact-design {
+  display: none;
+}
+
+.big-mountain-right {
+  animation: mountain-anim 10s alternate-reverse infinite linear;
+}
+
+.middle-mountain {
+  animation: mountain-anim 8s alternate-reverse infinite linear;
+}
+
+@-webkit-keyframes mountain-anim {
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  to {
+    -webkit-transform: translatex(-100px);
+            transform: translatex(-100px);
+  }
+}
+
+@keyframes mountain-anim {
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  to {
+    -webkit-transform: translatex(-100px);
+            transform: translatex(-100px);
+  }
+}
+
+.left-mountain {
+  animation: left-mountain-anim 7s alternate-reverse infinite linear;
+}
+
+@-webkit-keyframes left-mountain-anim {
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  to {
+    -webkit-transform: translatex(100px);
+            transform: translatex(100px);
+  }
+}
+
+@keyframes left-mountain-anim {
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  to {
+    -webkit-transform: translatex(100px);
+            transform: translatex(100px);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .about {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    font-size: 2.2em;
+    padding: 3em;
+  }
+  .contact-me {
+    display: -ms-grid;
+    display: grid;
+    height: 60vh;
+    margin-bottom: 0;
+  }
+  .contact-content {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 4em;
+  }
+  .contact-design {
+    display: -ms-grid;
+    display: grid;
+    margin-top: -48%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .about {
+    font-size: 3em;
+    padding: 4em;
+    line-height: 1.5em;
+  }
+  .contact-content {
+    text-align: center;
+    font-size: 1.9em;
+    padding: 2em;
+    line-height: 1.5em;
+  }
+  header {
+    padding: 3em 6em 2em 6em;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 10em 2em 10em;
+  }
+  .contact-content {
+    padding: 1em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

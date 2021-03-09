@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "montserrat", Arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background-color: #0e386e;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*this will put them in two colums*/
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*because we want this to be right align for mobile*/
+  padding: 2em;
+  /*for adding white space around it; on the inside of the element*/
+}
+
+header .logo {
+  color: #df0dd1;
+  font-weight: bold;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-header,
+.hero-design {
+  display: none;
+}
+
+.hero {
+  background: #083c80;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  margin-top: 1em;
+  font-weight: bold;
+  color: #4fe6e1;
+}
+
+span {
+  margin-top: 1em;
+  margin-right: 3em;
+  color: #df0dd1;
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+}
+
+.featured::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #df0dd10e;
+  border-top: 15px solid #f045e50e;
+  border-right: 10px solid #f045e50e;
+  border-radius: 30%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transform: translateY(10%) rotate(45deg);
+          transform: translateY(10%) rotate(45deg);
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3e6dab;
+  letter-spacing: 0.2em;
+  font-size: 1.3em;
+  padding-top: 2em;
+}
+
+.featured-title {
+  color: black;
+  font-weight: bold;
+  font-size: 0.85em;
+  margin-top: -0.4em;
+  display: block;
+}
+
+.featured-desc {
+  color: #0d274a;
+  margin-bottom: 3em;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.skills {
+  background: #fcf2f5;
+}
+
+.skills-container ul li {
+  padding: 2em;
+  margin-bottom: 1em;
+  background-color: #dbb7b72c;
+  border-top: 15px solid white;
+  border-left: 5px solid white;
+  border-radius: 3em 6em;
+}
+
+.skills-container ul li .icon-container {
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+}
+
+.skills-container ul li .icon-container.one {
+  width: 50px;
+}
+
+.skills-container ul li .icon-container.two {
+  width: 50px;
+}
+
+.skills-container ul li .icon-container.three {
+  width: 50px;
+}
+
+.skills-container ul li .skill-title {
+  font-weight: bold;
+}
+
+.skills-container ul li i {
+  color: #083c80;
+}
+
+.skills-container ul li .featured-desc {
+  margin-bottom: 2em;
+}
+
+.skills-container ul li .porfolio {
+  background: white;
+}
+
+.skills-container ul li .portfolio-container a img {
+  border-radius: 1em;
+  margin-bottom: 2em;
+}
+
+.contact-me {
+  background: #083c80;
+  margin-top: 5em;
+}
+
+.contact-subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #df0dd1;
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
+}
+
+.contact-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: -0.4em;
+  display: block;
+}
+
+.contact-desc {
+  color: #4fe6e1;
+  margin-bottom: 3em;
+  font-size: 1em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.contact-design {
+  display: none;
+}
+
+.big-mountain-right {
+  animation: mountain-anim 10s alternate-reverse infinite linear;
+}
+
+.middle-mountain {
+  animation: mountain-anim 8s alternate-reverse infinite linear;
+}
+
+@-webkit-keyframes mountain-anim {
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  to {
+    -webkit-transform: translatex(-100px);
+            transform: translatex(-100px);
+  }
+}
+
+@keyframes mountain-anim {
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  to {
+    -webkit-transform: translatex(-100px);
+            transform: translatex(-100px);
+  }
+}
+
+.left-mountain {
+  animation: left-mountain-anim 7s alternate-reverse infinite linear;
+}
+
+@-webkit-keyframes left-mountain-anim {
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  to {
+    -webkit-transform: translatex(100px);
+            transform: translatex(100px);
+  }
+}
+
+@keyframes left-mountain-anim {
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
+  }
+  to {
+    -webkit-transform: translatex(100px);
+            transform: translatex(100px);
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 800px) {
+  .featured,
+  .portfolio {
+    text-align: left;
+  }
+  .featured,
+  .portfolio-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+    /*two columns*/
+  }
+  .left,
+  .portfolio-left {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .right {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills {
+    margin-top: -5em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-container ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    gap: 1em;
+  }
+  .porfolio {
+    padding-top: 7em;
+  }
+  .portfolio-container img {
+    margin-top: 7em;
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #0e386e;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-header {
+    padding: 2em 4em 2em 0;
+  }
+  section {
+    padding: 10em;
+  }
+  .social-header {
+    display: block;
+  }
+  .social-header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 7em;
+    float: right;
+  }
+  .social-header ul img {
+    width: 20px;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: #083c80;
+    padding: 6em 8em 12em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .meet {
+    margin: unset;
+  }
+  .hero-design {
+    display: unset;
+    margin-top: -80%;
+    width: 100%;
+  }
+  .featured::before {
+    display: none;
+  }
+  .porfolio img {
+    float: right;
+    max-width: 500px;
+  }
+  .contact-me {
+    display: -ms-grid;
+    display: grid;
+    height: 100vh;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .contact-me .contact-content {
+    background: #083c80;
+    padding: 6em 8em 15em 4em;
+    text-align: center;
+  }
+  .contact-me .contact-content h3 {
+    font-size: 3em;
+    line-height: 1em;
+  }
+  .contact-design {
+    display: unset;
+    margin-top: -80%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 10em 2em 0;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero-content {
+    padding: 6em 8em 40em 10em;
+  }
+  .hero-design {
+    margin-top: -60%;
+  }
+  .contact-content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  header {
+    padding: 2em 5em 2em 10em;
+  }
+  .social-header {
+    padding: 2em 20em 2em 0;
+  }
+  section {
+    padding: 6em 25em 4em 25em;
+  }
+  .hero-content {
+    padding: 9em 25em 60em 25em;
+  }
+  .hero-design {
+    margin-top: -50%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
